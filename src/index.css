@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-inter: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+:root {
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary);
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  --color-bg-base: #0B0F17;
+  --color-surface-sidebar: #0F1522;
+  --color-surface-card: #1A2133;
+  --color-surface-card-hover: #212B42;
+  --color-border-line: #26304A;
+  --color-gold-accent: #E5A82B;
+  --color-gold-hover: #C48D17;
+  --color-gold-subtle: rgba(229, 168, 43, 0.12);
+  --color-tag-free-bg: #1E2A4A;
+  --color-tag-free-text: #8FB0FF;
+  --color-tag-prem-bg: #3A2D0C;
+  --color-tag-prem-text: #E5A82B;
+  --color-verified-success: #3DDC97;
+  --color-error-danger: #FF6B6B;
+  --color-text-primary: #F2F4F8;
+  --color-text-muted: #9AA6BD;
+}
+
+html, body {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.011em;
+  background-color: #0B0F17;
+  color: #F2F4F8;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Ensure buttons, navigation, cards, forms, tables and widgets use the same Inter font family */
+button, input, optgroup, select, textarea, table, th, td, nav, aside, dialog {
+  font-family: var(--font-primary);
+}
+
+/* Headings: slightly bold and clearly readable */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Body text uses normal font weight with optimized legibility */
+p, label, li, a {
+  letter-spacing: -0.006em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+::-webkit-scrollbar-thumb {
+  background: #26304A;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3A4768;
+}
+
+/* 44px min touch target guideline enforcement */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

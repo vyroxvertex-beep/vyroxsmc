@@ -1,0 +1,6 @@
+{
+  "name": "VYROX - Smart Money Concepts (SMC) Theory",
+  "description": "Premier institutional Smart Money Concepts (SMC) trading academy featuring video curriculum, 1-on-1 mentorship, live trading community, device security, and payment verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
